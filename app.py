@@ -24,7 +24,7 @@ def index():
     
     return render_template('index.html', games=result)
 
-
+# post para colocar um game
 @app.post('/post_game')
 def post_game():
     game_name = request.form['game_name']
@@ -45,5 +45,3 @@ def post_game():
 
 if __name__ == '__main__':
     app.run(debug=True)
-    
-    
